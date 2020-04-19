@@ -1,0 +1,17 @@
+how to add device to your git hub account 
+
+
+1.ssh-keygen -t rsa -b 4096 -C "md.abdullahalmuid@gmail.com"
+2.press enter 
+3.give password
+4.confirm password
+
+#to let computer know that we want to use this key
+5.eval $(ssh-agent -s)
+
+# this is the default location where id ssh code 
+6.ssh-add ~/.ssh/id_rsa
+
+
+# it will copy ssh to clipboard 
+7.clip < ~/.ssh/id_rsa.pub
